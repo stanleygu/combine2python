@@ -164,9 +164,7 @@ def codeanalysis(pymodelloc, extloc):
         if not '.xml' in line:
             if "roadrunner.RoadRunner()" in line:
                 line = line.replace("roadrunner.RoadRunner()", "te.loada(AntimonyTranslation)")
-        if '"compartment"' in line:
-            line = line.replace("compartment", "compartment_")
-        print line
+            print line
 
 
 #Given the location of python script, outputs JSON string
